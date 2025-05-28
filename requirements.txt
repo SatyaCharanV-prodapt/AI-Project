@@ -2,3 +2,7 @@ openai
 langchain
 langchain-openai
 langchain-mcp-adapters
+fastapi
+uvicorn
+langgraph
+google-generativeai
