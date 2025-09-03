@@ -1,16 +1,32 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: artist-web
-  description: The place to be, for great artists
+  name: sysco-sample-api-repo1
+  description: The Sysco-Sample-API-Repo is designed to provide sample API specifications aligned with the Sysco API guidelines. These specifications are typically offered in the OpenAPI format, ensuring compliance with industry-standard best practices for API design and documentation.
+  links:
+  - url: https://dashboard.example.com
+    title: My Dashboard
+    icon: dashboard
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    datadoghq.com/dashboard-url: https://p.ap2.datadoghq.com/sb/ac3fd2c1-6cfd-11f0-b359-560ce0421b8a-460e7505190dc3092d4cb46184f8183f
+    sonarqube.org/project-key: Meeranmk_portfolio
+    jira.com/project-key: MFLPO
+    jira.com/incoming-issues-status: "TO DO"
+    confluence/page-id: "131074"
+    sonarcloud.io/project-key: Meeranmk_portfolio
+    argocd/app-name: python-test-app-1
+    jenkins.io/job-full-name: testing/testing-01
+    github.com/project-slug: Meeranmk/portfolio
+    concourse-ci.org/pipeline-name: hello-world
+    github.com/project-slug: SatyaCharanV-prodapt/AI-Project
+    
+
 spec:
-  type: website
-  lifecycle: production
-  owner: artist-relations-team
-  system: artist-engagement-portal
-  dependsOn:
-    - resource:default/artists-db
-  dependencyOf:
-    - component:default/artist-web-lookup
+  type: service
+  lifecycle: development
+  owner: prodapt
+  system: Sysco-API-Portal
   providesApis:
-    - artist-api
+    - Sysco-Backend-API1
+    - Sysco-Backend-API2
